@@ -1,0 +1,90 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+    color: var(--purple);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    outline: none;
+    margin-bottom: 22px;
+}
+
+.container > a {
+    text-decoration: none;
+    color: var(--purple);
+    margin-bottom: 33px;
+}
+
+.container > a:hover {
+    text-decoration: underline;
+}
+
+.cardLink li {
+    width: 100vw;
+    max-width: 330px;
+    padding: 12px;
+    margin-bottom: 16px;
+    list-style: none;
+    text-align: center;
+    border: 1px solid ;
+    outline: none;
+}
+
+.cardLink li a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.cardLink li a:hover {
+    font-weight: bold;
+}
+
+.cardLink li:last-child {
+    margin-bottom: 68px;
+}
+
+.logoImage {
+    display: flex;
+    justify-content: space-around;
+    min-width: 240px;
+    list-style: none;
+}
+
+.logoImage img:hover {
+    animation: rotate infinite 2s linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(359deg);
+    }
+}
