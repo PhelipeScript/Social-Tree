@@ -59,10 +59,12 @@ body {
 .cardLink li a {
     text-decoration: none;
     color: var(--purple);
+    transition: all .4s ease;
 }
 
 .cardLink li a:hover {
     font-weight: bold;
+    transition: all .4s ease;
 }
 
 .cardLink li:last-child {
